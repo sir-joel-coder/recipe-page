@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+body {
+     font-family: "Young Serif", serif;
+     font-weight: 400;
+     font-style: normal; 
+     
+     
+    
+  }
+
+
+.recipe-container {
+    display: flex;
+    width: 100%;
+    background-color: hsl(30, 54%, 90%);
+    justify-content: center;
+    padding: 5rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    background-color:  hsl(0, 0%, 100%);
+    width: 100%;
+    border-radius: 20px;
+    gap: 2rem;
+}
+
+.img-container img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.prep-time {
+    background-color: hsl(330, 100%, 98%);
+    h3 {
+        color: hsl(332, 51%, 32%);
+    }
+    li::marker {
+        color: hsl(332, 51%, 32%);
+    }
+}
+
+.prep-time, .ingredients{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding:15px 2rem;
+    justify-content: center;
+    width: 100%;  
+}
+ul, ol{
+    display: flex;
+    flex-direction: column;
+    list-style-position: inside;
+    gap: 15px;
+}
+h2 {
+    color: hsl(14, 45%, 36%);
+}
+
+.instructions {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+li::marker {
+    color: hsl(14, 45%, 36%);
+    
+}
+li {
+    margin-bottom: 10px;
+    text-indent: -1em;
+    padding-left: 1em;
+}
+
+.nutrition {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    td {
+        padding: 10px;
+    }
+    .tr {
+        border-bottom: 1px solid black;
+    }
+    
+}
+.bd {
+    color: hsl(14, 45%, 36%);
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width:800px){
+    .container {
+        padding: 3rem;
+    }
+    .prep-time, .ingredients {
+        padding: 10px .5rem;
+    }
+    .recipe-container {
+        padding: 0;
+    }
+}
+@media screen and (max-width:700px){
+    .container {
+        padding:1rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .img-container img {
+        border-radius: 0;
+        padding: 0;  
+    }
+    .container {
+        border-radius: 0;
+    }
+}
+
